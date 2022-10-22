@@ -46,10 +46,23 @@
             text-align: justify;
         }
 
+        h3 {
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .card {
+            border-radius: 1000px;
+        }
+
         .fontstyle {
             font-size: larger;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             text-align: justify;
+        }
+
+        .mb {
+            margin-bottom: 120px;
         }
     </style>
 </head>
@@ -75,10 +88,13 @@
                 <div class="collapse navbar-collapse " id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#home">Beranda</a>
+                            <a class="nav-link" aria-current="page" href="#beranda">Beranda</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#karakter">Karakter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Sifat">Sifat</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#voiceover">Pengisi Suara</a>
@@ -102,16 +118,27 @@
     </header>
 
     <main>
-        <section id="home">
-            <div class="container-fluid">
+        <section id="beranda">
+            <div class="container-fluid mb">
+
                 <div class="text-center">
                     <img src="asset/img/hutaorender2.png" class="img-fluid" width="1200" alt="Hu Tao" srcset="">
                 </div>
+                <figure class="text-center text-white mt-4">
+                    <blockquote class="blockquote">
+                        <p>Disaat Qiqi masih hidup aku akan terus untuk mengejarnya <br> hingga dia bisa
+                            beristirahat
+                            dengan tenang</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Hu tao<cite title="Source Title"> Direktur ke-77</cite>
+                    </figcaption>
+                </figure>
             </div>
         </section>
 
         <section id="karakter">
-            <div class="kotak m-5">
+            <div class="kotak mt-2">
                 <div class="container">
                     <h1 class="text-center">Informasi Karakter</h1>
                     <div class="row" style="padding-bottom:50px">
@@ -146,8 +173,9 @@
                                     orang-orang yang memperlakukan karyawannya dengan curiga setiap kali mereka pergi
                                     bekerja di malam hari.
                                 </p>
-                                <h3>Trailer</h3>
-                                <div class="container-md">
+
+                                <div class="container-md text-center">
+                                    <h3>Trailer</h3>
                                     <div class="embed-responsive">
                                         <iframe class="embed-responsive-item"
                                             src="https://www.youtube.com/embed/t-dM8p3TxVc" title="YouTube video player"
@@ -155,6 +183,42 @@
                                             allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
                                             allowfullscreen></iframe>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Sifat">
+            <div class="container mt-5" data-aos="fade-up">
+                <div class="bg-dark">
+                    <h2 class="text-white text-center">Personality Hu Tao</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card bg-body">
+                                <img src="asset/img/jail.png" class="card-img-top" height="400" width="200" alt="...">
+                                <div class="card-body">
+                                    <h3>Jail</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card bg-body">
+                                <img src="asset/img/misterius.webp" class="card-img-top" height="400" width="200"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h3>Misterius</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card bg-body">
+                                <img src="asset/img/periang.webp" class="card-img-top" height="400" width="200"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h3>Periang</h3>
                                 </div>
                             </div>
                         </div>
@@ -173,15 +237,15 @@
     </svg>
     <footer class="text-white text-center pb-2 bg-maroon">
         <div class="row">
-            <div class="col-6">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit ullam delectus
+            <div class="col-md-6">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit ullam delectus
                     earum, tempore, natus qui ab voluptate non perspiciatis recusandae accusantium veniam ut illum
-                    nostrum quae maxime distinctio. Pariatur.</h1>
+                    nostrum quae maxime distinctio. Pariatur.</h3>
             </div>
-            <div class="col-6">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit ullam delectus
+            <div class="col-md-6">
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit ullam delectus
                     earum, tempore, natus qui ab voluptate non perspiciatis recusandae accusantium veniam ut illum
-                    nostrum quae maxime distinctio. Pariatur.</h1>
+                    nostrum quae maxime distinctio. Pariatur.</h3>
             </div>
         </div>
     </footer>
