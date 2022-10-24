@@ -12,6 +12,7 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         .contact {
             height: fit-content;
@@ -40,6 +41,8 @@
             padding: 20px;
             height: fit-content;
             border-bottom: 5px solid rgb(156, 156, 156);
+            margin-right: 20px;
+            margin-left: 20px;
         }
 
         h1 {
@@ -51,7 +54,7 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
-        .card {
+        .radius {
             border-radius: 1000px;
         }
 
@@ -63,6 +66,16 @@
 
         .mb {
             margin-bottom: 120px;
+        }
+
+        a {
+            color: white;
+        }
+
+        .innerkotak {
+            background-color: aliceblue;
+            color: black;
+            border-radius: 1000px;
         }
     </style>
 </head>
@@ -109,7 +122,7 @@
                             <a class="nav-link" href="#tier">TierList</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#tentang">Tentang</a>
+                            <a class="nav-link" href="#profil">Profil</a>
                         </li>
                     </ul>
                 </div>
@@ -119,16 +132,17 @@
 
     <main>
         <section id="beranda">
-            <div class="container-fluid mb">
+            <div class="container-fluid mb ">
 
-                <div class="text-center">
-                    <img src="asset/img/hutaorender2.png" class="img-fluid" width="1200" alt="Hu Tao" srcset="">
+                <div class="text-center" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img data-aos-easing="ease-in-back" src="asset/img/hutaorender2.png" class="img-fluid" width="1200"
+                        alt="Hu Tao" srcset="">
                 </div>
                 <figure class="text-center text-white mt-4">
                     <blockquote class="blockquote">
-                        <p>Disaat Qiqi masih hidup aku akan terus untuk mengejarnya <br> hingga dia bisa
+                        <p>"Disaat Qiqi masih hidup aku akan terus untuk mengejarnya <br> hingga dia bisa
                             beristirahat
-                            dengan tenang</p>
+                            dengan tenang"</p>
                     </blockquote>
                     <figcaption class="blockquote-footer">
                         Hu tao<cite title="Source Title"> Direktur ke-77</cite>
@@ -140,14 +154,14 @@
         <section id="karakter">
             <div class="kotak mt-2">
                 <div class="container">
-                    <h1 class="text-center">Informasi Karakter</h1>
+                    <h1 class="text-center" data-aos="flip-up">Informasi Karakter</h1>
                     <div class="row" style="padding-bottom:50px">
-                        <div class="col-md-6" data-aos="fade-right">
+                        <div class="col-md-6" data-aos="fade-left">
                             <img src="asset/img/hutao.webp" class="img-rounded" style=" border-radius: 25px;"
                                 width="100%" height="80%" />
                         </div>
-                        <div class="col-md-6" data-aos="fade-left">
-                            <div class="kotak bg-dark">
+                        <div class="col-md-6" data-aos="fade-right">
+                            <div class="kotak bg-dark ">
                                 <h3 class="text-center">HU TAO</h3>
                                 <p class="fontstyle">Hu Tao adalah Direktur ke-77 dari Rumah Pemakaman Wangsheng, orang
                                     yang penting untuk mengelola urusan pemakaman Liyue.
@@ -192,12 +206,12 @@
         </section>
 
         <section id="Sifat">
-            <div class="container mt-5" data-aos="fade-up">
-                <div class="bg-dark">
+            <div class="container mt-5">
+                <div class="bg-dark" data-aos="fade-down" data-aos-duration="3000">
                     <h2 class="text-white text-center">Personality Hu Tao</h2>
                     <div class="row">
                         <div class="col-md-4">
-                            <div class="card bg-body">
+                            <div class="card radius bg-body">
                                 <img src="asset/img/jail.png" class="card-img-top" height="400" width="200" alt="...">
                                 <div class="card-body">
                                     <h3>Jail</h3>
@@ -205,7 +219,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card bg-body">
+                            <div class="card radius bg-body">
                                 <img src="asset/img/misterius.webp" class="card-img-top" height="400" width="200"
                                     alt="...">
                                 <div class="card-body">
@@ -214,7 +228,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card bg-body">
+                            <div class="card radius bg-body">
                                 <img src="asset/img/periang.webp" class="card-img-top" height="400" width="200"
                                     alt="...">
                                 <div class="card-body">
@@ -228,6 +242,39 @@
         </section>
 
 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#740505" fill-opacity="1" d="M0,96L1440,224L1440,320L0,320Z"></path>
+        </svg>
+        <div style="background-color:#740505;color:white;margin:0;">
+            <h1 class="text-center">Lanjutkan Scrollnya kakak</h1>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#740505" fill-opacity="1" d="M0,96L1440,224L1440,0L0,0Z"></path>
+        </svg>
+
+        <section id="profil">
+            <div class="container-fluid">
+                <div class=" mt-4">
+                    <h2 style="text-align:center;color: white;">Profil Mahasiswa</h2>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div class="kotak ">
+                                <img src="asset/img/periang.webp" class="card-img-top" height="400" width="200"
+                                    alt="...">
+                                <h2>Nama : Ferry Aditya H</h2>
+                                <h2>Kelas : IF A 2020</h2>
+                                <h2>NPM : 5520120021</h2>
+                                <a name="" id="" class="btn btn-primary" href="#" role="button">Selengkapnya</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+
+
+                </div>
+
+        </section>
     </main>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -235,28 +282,46 @@
             d="M0,96L120,122.7C240,149,480,203,720,197.3C960,192,1200,128,1320,96L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
         </path>
     </svg>
-    <footer class="text-white text-center pb-2 bg-maroon">
+    <footer class="text-white text-center pb-2 bg-maroon ">
         <div class="row">
-            <div class="col-md-6">
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit ullam delectus
-                    earum, tempore, natus qui ab voluptate non perspiciatis recusandae accusantium veniam ut illum
-                    nostrum quae maxime distinctio. Pariatur.</h3>
+
+            <div class="col-md-4" data-aos="fade-down">
+                <h2>Web ini dibuat untuk</h2>
+                <p>memenuhi Tugas Pemrograman Web Lanjut sebagai <br>
+                    prasyarat untuk lulus mata kuliah ini</p>
             </div>
-            <div class="col-md-6">
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis reprehenderit ullam delectus
-                    earum, tempore, natus qui ab voluptate non perspiciatis recusandae accusantium veniam ut illum
-                    nostrum quae maxime distinctio. Pariatur.</h3>
+            <div class="col-md-4" data-aos="fade-down">
+                <h1 class="text-center">Akun Sosial Media</h1>
+                <a href="https://wa.me/+6281224669182"><i class="fa-brands fa-2x fa-whatsapp mb-3">Whatsapp :
+                        081224669182</i></a>
+                <a href="https://wa.me/+6281224669182"><i class="fa-brands fa-2x fa-instagram mb-5"> Instagram :
+                        fekka_1st</i></a>
+            </div>
+            <div class="col-md-4" data-aos="fade-down">
+                <h2>Quote Random</h2>
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        <p>"Jika anda lapar tinggal makan <br> bukan tunggu ayank nyuruh makan"</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer text-white">
+                        dari player genshin impact <cite title="Ferry"> Ferry A.H</cite>
+                    </figcaption>
+                </figure>
             </div>
         </div>
+        <h5>&copy; Copyright 2022 Ferry A.H</h5>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-        </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-        </script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init(); 
+</script>
 
 </html>
