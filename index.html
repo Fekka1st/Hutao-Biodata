@@ -19,13 +19,18 @@
 </head>
 
 <body class="bg-dark">
-    <!-- buat Audio -->
     <audio id="myAudio">
         <source src="asset/audio/Hutao.wav" type="audio/mpeg">
     </audio>
-    <script>
-        var x = document.getElementById("myAudio");
 
+    <audio id="backsound">
+        <source src="asset/audio/backsound.mp3" type="audio/mpeg">
+        <source src="asset/audio/backsound.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var autoplay = document.getElementById("backsound").play();
+        var x = document.getElementById("myAudio");
         function playAudio() {
             x.play();
         }
@@ -34,7 +39,6 @@
             x.pause();
         }
     </script>
-
     <!-- Contact -->
     <header>
         <div class="contact">
@@ -395,10 +399,6 @@
         </div>
         <h5>&copy; Copyright 2022 Ferry A.H</h5>
     </footer>
-    <audio autoplay>
-        <source src="asset/audio/backsound.mp3" type="audio/ogg">
-        <source src="asset/audio/backsound.mp3" type="audio/mpeg">
-    </audio>
 </body>
 <!-- Script -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
